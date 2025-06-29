@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Circle Background -->
+    <path
+        android:fillColor="@color/red_accent"
+        android:pathData="M24,0
+                          C10.745,0 0,10.745 0,24
+                          C0,37.255 10.745,48 24,48
+                          C37.255,48 48,37.255 48,24
+                          C48,10.745 37.255,0 24,0z" />
+
+    <!-- Minus Sign -->
+    <path
+        android:fillColor="@color/cardBg"
+        android:pathData="M16,22h16v4H16z" />
+</vector>

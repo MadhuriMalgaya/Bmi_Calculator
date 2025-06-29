@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bmi"
+        android:icon="@drawable/bmi_bottom"
+        android:title="BMI Result"/>
+
+    <item
+        android:id="@+id/visualize"
+        android:icon="@drawable/visualize"
+        android:title="Visualization"/>
+
+
+
+</menu>

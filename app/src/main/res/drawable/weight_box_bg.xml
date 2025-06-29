@@ -1,0 +1,44 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom-right dark shadow (for depth) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E6ECF5"/>
+            <corners
+                android:topLeftRadius="20dp"
+                android:bottomRightRadius="20dp"
+                android:topRightRadius="4dp"
+                android:bottomLeftRadius="4dp"/>
+            <padding android:left="2dp" android:top="2dp" android:right="0dp" android:bottom="0dp"/>
+        </shape>
+    </item>
+
+    <!-- Top-left light shadow (highlight) -->
+    <item android:left="-2dp" android:top="-2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#E6ECF5"/>
+            <corners
+                android:topLeftRadius="20dp"
+                android:bottomRightRadius="20dp"
+                android:topRightRadius="4dp"
+                android:bottomLeftRadius="4dp"/>
+            <stroke android:width="2dp" android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Inner content that appears "pressed" -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#E6ECF5"
+                android:endColor="#E6ECF9"
+                android:angle="270" />
+            <corners
+                android:topLeftRadius="20dp"
+                android:bottomRightRadius="20dp"
+                android:topRightRadius="4dp"
+                android:bottomLeftRadius="4dp"/>
+        </shape>
+    </item>
+
+</layer-list>

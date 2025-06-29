@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/apple"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/apple"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/orange"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/banana"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/banana"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/pomegrante"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="120dp"
+            android:src="@drawable/pomegrante"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/mango"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="160dp"
+            android:src="@drawable/mango"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/cucumber"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="200dp"
+            android:src="@drawable/cucumber"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/grapes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="250dp"
+            android:src="@drawable/grapes"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/onion"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="300dp"
+            android:src="@drawable/onion"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/bitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="350dp"
+            android:src="@drawable/bitter_guard"
+            android:visibility="invisible" />
+
+
+    </FrameLayout>
+
+
+    <!-- Horizontal center guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <!-- Left arc -->
+    <ImageView
+        android:id="@+id/leftArc"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:src="@drawable/left_arc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/centerGuideline"
+        android:layout_marginEnd="-35dp"
+        android:layout_marginBottom="3dp"/>
+
+    <!-- Right arc -->
+    <ImageView
+        android:id="@+id/rightArc"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:src="@drawable/right_arc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/centerGuideline"
+        android:layout_marginStart="-35dp" />
+
+    <!-- Needle centered -->
+    <ImageView
+        android:id="@+id/needle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/needle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart BMI"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/textcolor"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="120dp"
+        android:translationY="200dp"/>
+
+    <TextView
+        android:id="@+id/thought"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/textcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:shadowColor="#55000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

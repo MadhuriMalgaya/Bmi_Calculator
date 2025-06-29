@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BodyIQ</string>
+    <string name="gender_icon">Male gender icon</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

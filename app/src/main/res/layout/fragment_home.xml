@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="@color/background"
+    tools:context=".HomeFragment">
+    <FrameLayout
+        android:id="@+id/frameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/bmify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:text="bmify"
+                android:textColor="#333333"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/heart"
+                android:layout_marginStart="7dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="Hello! How are you"
+            android:textColor="@color/red_accent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="125dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="Welcome"
+            android:textColor="@color/red_accent"
+            android:textSize="16sp" />
+
+        <!-- Gender Cards -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/girlCard"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="6dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardBackgroundColor="@color/cardBg"
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/girl_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/girl_logo"
+                    android:contentDescription="@string/gender_icon" />
+
+                <TextView
+                    android:id="@+id/girl_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="FEMALE"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_mono_semibold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/gender_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="335dp"
+            android:layout_marginStart="130dp"
+            android:text="Please select gender!"
+            android:textColor="@color/red_dark"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:visibility="gone"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/boyCard"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/cardBg"
+            android:layout_marginTop="180dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <ImageView
+                    android:id="@+id/boy_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/boy_logo"
+                    android:contentDescription="@string/gender_icon" />
+                <TextView
+                    android:id="@+id/boy_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="MALE"
+                    android:textSize="16sp"
+                    android:textColor="@color/textcolor"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_mono_semibold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/height_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/background"
+            android:layout_marginTop="380dp"> <!-- Adjust based on your layout -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HEIGHT"
+                android:textColor="#333333"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/height_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="36sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ft"
+                    android:textSize="30dp"
+                    android:layout_marginStart="4dp"
+                    android:textColor="#333333"
+                    android:fontFamily="@font/roboto_mono_bold"/>
+            </LinearLayout>
+            <SeekBar
+                android:id="@+id/heightSeekBar"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:max="80"
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_progressbar"
+                android:thumb="@drawable/seekbar_custom_thumb"
+                android:thumbTint="@null"
+                android:soundEffectsEnabled="false"
+                android:splitTrack="false" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/height_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_marginStart="130dp"
+            android:text="Please select Height!"
+            android:textColor="@color/red_dark"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:visibility="gone"/>
+        <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="550dp"
+           android:layout_marginStart="70dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Weight"
+               android:textSize="20dp"
+               android:textStyle="bold"
+               android:fontFamily="@font/roboto_mono_bold"
+               android:textColor="#333333"/>
+       </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/weightcard"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="6dp"
+            card_view:cardBackgroundColor="@color/cardBg"
+            android:layout_marginTop="580dp"
+            android:layout_marginStart="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/weight_box_bg"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp">
+
+                    <EditText
+                        android:id="@+id/weight_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" kg"
+                    android:textSize="22sp"
+                    android:textColor="#888888" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_minus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/minus"
+                        android:scaleType="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Minus"
+                        android:padding="6dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_plus"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/plus"
+                        android:scaleType="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="Plus"
+                        android:padding="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="550dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="90dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AGE"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="#333333"/>
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Agecard"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="6dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"
+            card_view:cardBackgroundColor="@color/cardBg"
+            android:layout_marginTop="580dp"
+            android:layout_marginStart="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/weight_box_bg"
+                    android:padding="10dp"
+                    android:layout_marginBottom="16dp">
+
+                    <EditText
+                        android:id="@+id/Agevalue"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/btn_minus1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/minus"
+                        android:scaleType="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:contentDescription="Minus"
+                        android:padding="6dp"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_plus1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/plus"
+                        android:scaleType="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="Plus"
+                        android:padding="6dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/weight_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="730dp"
+            android:layout_marginStart="130dp"
+            android:text="Please select Weight!"
+            android:textColor="@color/red_dark"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/age_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="730dp"
+            android:layout_marginStart="130dp"
+            android:text="Please select Age!"
+            android:textColor="@color/red_dark"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:visibility="gone"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="770dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:elevation="6dp"
+            android:background="@drawable/rounded_corner"
+            android:text="Calculate your BMI"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+    </FrameLayout>
+</ScrollView>

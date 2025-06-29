@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="background_color">#FFFFFF</color>
+    <color name="textcolor">#000000</color>
+    <color name="textPrimary">#333333</color>
+    <color name="textSecondary">#666666</color>
+    <color name="cardBg">#F8F8F8</color>
+    <color name="boxBg">#F4F4F6</color>
+    <color name="background">#F1F2F7</color>
+
+
+    <color name="red_lightest">#FFEBEE</color>
+    <color name="red_lighter">#FFCDD2</color>
+    <color name="red_light">#EF9A9A</color>
+    <color name="red_normal">#F44336</color>
+    <color name="red_dark">#D32F2F</color>
+    <color name="red_darker">#B71C1C</color>
+    <color name="red_accent">#FF5252</color>
+    <color name="green">#32CD32</color>
+
+
+    <color name="bmi_normal">#A8E6CF</color> <!-- Original Light Green -->
+    <color name="bmi_normal_light">#BBFDBB</color> <!-- Lighter Green for Light Mode -->
+    <color name="bmi_normal_dark">#2E8B57</color> <!-- Dark Green for Dark Mode -->
+
+    <color name="bmi_underweight">#FFCC80</color> <!-- Original Light Orange -->
+    <color name="bmi_underweight_light">#FFEB99</color> <!-- Lighter Orange for Light Mode -->
+    <color name="bmi_underweight_dark">#FF5722</color> <!-- Dark Orange for Dark Mode -->
+
+    <color name="bmi_overweight">#FFD54F</color> <!-- Original Light Yellow -->
+    <color name="bmi_overweight_light">#FFEB8D</color> <!-- Lighter Yellow for Light Mode -->
+    <color name="bmi_overweight_dark">#FF9800</color> <!-- Dark Yellow for Dark Mode -->
+
+    <color name="bmi_obese1">#FF8A65</color> <!-- Original Light Red -->
+    <color name="bmi_obese1_light">#FFAB91</color> <!-- Lighter Red for Light Mode -->
+    <color name="bmi_obese1_dark">#D32F2F</color> <!-- Dark Red for Dark Mode -->
+
+    <color name="bmi_obese2">#FF7043</color> <!-- Original Orange -->
+    <color name="bmi_obese2_light">#FF8A65</color> <!-- Lighter Orange for Light Mode -->
+    <color name="bmi_obese2_dark">#C63E2B</color> <!-- Dark Orange for Dark Mode -->
+
+    <color name="bmi_obese3">#D84315</color> <!-- Original Dark Red -->
+    <color name="bmi_obese3_light">#E57373</color> <!-- Lighter Red for Light Mode -->
+    <color name="bmi_obese3_dark">#B71C1C</color> <!-- Dark Red for Dark Mode -->
+
+    <color name="highlight_background">#E6ECF5</color>
+
+
+    \
+
+</resources>
